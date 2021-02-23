@@ -61,7 +61,7 @@ computerPlayBtn.addEventListener('click', () => {
         return;
     }
 
-    //place on function which initialize game
+    initGame(player, vsPlayer);
     signs.classList.add('hide');
 
  });
