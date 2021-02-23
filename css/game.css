@@ -1,3 +1,129 @@
-body{
-    background-color: grey;
+.game-container{
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin: 150px auto;
+    position: relative;
+    background-color:rgba(17, 121, 34, 0.3);
+    border-radius: 3rem;
+    text-transform: uppercase;
+}
+
+.game-container:hover{
+    background-color:rgba(17, 121, 34, 0.6);
+    box-shadow: 5px 10px rgba(12, 43, 17, 0.9);
+}
+
+#cnv{
+    position: absolute;
+}
+
+.signs{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+}
+
+.signs h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.signs div{
+    display: inline-block;
+}
+
+.signs .x{
+    padding: 5px;
+    background-color: #FFF;
+    color: #000;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-left: 80px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.signs .o{
+    padding: 5px;
+    background-color: #FFF;
+    color: #000;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.signs .start{
+    font-size: 1.5em;
+    width: 70px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    box-shadow: 5px 10px rgba(12, 43, 17, 0.9);
+    color: #FFF;
+    cursor: pointer;
+    transition: 100ms width ease-in;
+}
+
+.signs .start:hover{
+    width: 110px;
+}
+
+.signs .x:hover, .o:hover{
+    background-color: #333;
+    color: #FFF;
+    box-shadow: 5px 10px rgba(12, 43, 17, 0.9);
+}
+
+.active{
+    background-color: #333 !important;
+    color: #FFF !important;
+}
+
+.gameover{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.gameover h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Fascinate Inline', cursive;
+    color: #fff;
+    margin: 40px 0 20px 0;
+}
+
+.gameover .winner-img{
+    display: block;
+    margin: 20px auto;
+}
+
+.gameover .start{
+    font-size: 1.5em;
+    width: 150px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: 100ms width ease-in;
+}
+.gameover .start:hover{
+    width: 200px;
 }
