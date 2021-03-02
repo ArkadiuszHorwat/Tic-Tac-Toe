@@ -5,6 +5,7 @@
     margin: 150px auto;
     position: relative;
     border: #333 solid 0.3rem;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .shadow{
@@ -83,7 +84,9 @@
     position: absolute;
     width: 500px;
     height: 500px;
-    background-color:rgba(167, 167, 167, 0.6);
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 .gameover h1{
     font-size: 2.5rem;

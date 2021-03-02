@@ -55,14 +55,10 @@ h1 {
 
 .menu.left .button:hover{
     background-color: var(--left-button-hover-color);
-    border-color: black;
-    color: black;
 }
 
 .menu.right .button:hover{
     background-color: var(--right-button-hover-color);
-    border-color: black;
-    color: black;
 }
 
 .menu-container{
