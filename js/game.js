@@ -1,11 +1,13 @@
-function initGame(player, vsPlayer){
+async function initGame(player, vsPlayer){
     const canvas = document.getElementById("cnv");
     const ctx = canvas.getContext("2d");
 
     let board = [];
     const COLUMN = 3;
     const ROW = 3;
+
     const SPACE_SIZE = 170;
+    
 
     let gameData = new Array(9);
 
@@ -209,7 +211,7 @@ function initGame(player, vsPlayer){
     }
 
     function showGameOver(player){
-        let message = player == "tie" ? "Ooops No Winner" : "The Winner is";
+        let message = player == "tie" ? "No Winner" : "The Winner is";
         let imgSrc = `img/${player}.png`;
 
         if(player == 'tie'){

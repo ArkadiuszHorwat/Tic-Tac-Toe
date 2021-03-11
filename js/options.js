@@ -11,6 +11,8 @@ const friendPlayBtn = document.querySelector('.friend');
 const menuPanel = document.querySelector('.menu-container');
 const gamePanel = document.querySelector('.game-container');
 
+const small = window.matchMedia("max-width: 1000px").matches;
+
 let vsPlayer;
 const player = new Object;
 
